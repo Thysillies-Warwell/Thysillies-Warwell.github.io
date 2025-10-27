@@ -1,0 +1,64 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap'); */
+ 
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ 
+body {
+    /* background-image: url('../images/background.jpg'); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Lexend", sans-serif;
+}
+ 
+main {
+    background-color: rgb(232, 0, 0);
+    width: 1000px;
+    height: 700px;
+    margin: 12rem auto 0;
+    padding: 2.4rem;
+    border-radius: 2rem;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+ 
+ 
+    /* Animation */
+    animation: card-anim 1s ease-in; 
+    animation-fill-mode: forwards;
+}
+ 
+@keyframes card-anim {
+    to {transform: scale(1.05) rotateZ(7deg);}
+}
+ 
+h1 {
+    font-family: "Cedarville Cursive", cursive;
+    border-bottom: 3px black solid;
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 2.4rem;
+    padding-bottom: 0.8rem;
+}
+ 
+p {
+    font-size: 1.3rem;
+    margin-bottom: 1em;
+}
+ 
+h4 {
+    font-size: 1.3em;
+    margin-bottom: 1rem;
+}
+ 
+#Necron-Codex {
+    display: flex;
+    gap: 2.4rem;
+}
+ 
+#codex-img {
+    height: 480px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
