@@ -1,64 +1,143 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap'); */
- 
 * {
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
+    box-sizing: boarder-box;
 }
- 
+
 body {
-    /* background-image: url('../images/background.jpg'); */
+    background-image: url('../Images/backdrop.PNG');
     background-repeat: no-repeat;
-    background-size: cover;
-    font-family: "Lexend", sans-serif;
+    background-size:fill;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
 }
- 
+
 main {
-    background-color: rgb(232, 0, 0);
+    /* background-color: snow; */
     width: 1000px;
-    height: 700px;
-    margin: 12rem auto 0;
-    padding: 2.4rem;
-    border-radius: 2rem;
-    box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
- 
- 
-    /* Animation */
-    animation: card-anim 1s ease-in; 
-    animation-fill-mode: forwards;
 }
- 
-@keyframes card-anim {
-    to {transform: scale(1.05) rotateZ(7deg);}
-}
- 
+
+
+
 h1 {
-    font-family: "Cedarville Cursive", cursive;
     border-bottom: 3px black solid;
     text-align: center;
     font-size: 3em;
     margin-bottom: 2.4rem;
-    padding-bottom: 0.8rem;
+
 }
  
 p {
+    border: 3px black solid;
+    background-color: snow;
+    padding-left: 2.0rem;
     font-size: 1.3rem;
     margin-bottom: 1em;
+    border-radius: 16px;
+
 }
  
 h4 {
+    border: 3px black solid;
+    background-color: snow;
+    padding-left: 1.0rem;
     font-size: 1.3em;
-    margin-bottom: 1rem;
+    margin-right: 20rem;
+    border-radius: 16px;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
 }
  
 #Necron-Codex {
-    display: flex;
     gap: 2.4rem;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(5, 94, 0);
+    padding: 1.8rem;
+    border: 3px black solid;
+    border-radius: 16px;
 }
- 
+
+#Apartment {
+    border: 3px black solid;
+    border-radius: 16px;
+    margin-top: 5rem;
+    gap: 2.4rem;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(0, 170, 255);
+    padding: 1.8rem;
+}
+
+#Charger {
+    border: 3px black solid;
+    border-radius: 16px;
+    margin-top: 5rem;
+    gap: 2.4rem;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(0, 0, 0);
+    padding: 1.8rem;
+}
+
+#Registeel {
+    border: 3px black solid;
+    border-radius: 16px;
+    margin-top: 5rem;
+    gap: 2.4rem;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(66, 66, 66);
+    padding: 1.8rem;
+}
+
+#Rhino_fire {
+    border: 3px black solid;
+    border-radius: 16px;
+    margin-top: 5rem;
+    gap: 2.4rem;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(255, 140, 0);
+    padding: 1.8rem;
+}
+
+#Steam_Deck {
+    border: 3px black solid;
+    border-radius: 16px;
+    margin-top: 5rem;
+    gap: 2.4rem;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(0, 0, 0);
+    padding: 1.8rem;
+}
+
 #codex-img {
     height: 480px;
-    border-radius: 8px;
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+}
+
+#pages {
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 200px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: white; /* Black */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+    /* justify-content: space-around; */
+    border: 3px black solid;
+    border-radius: 16px;
+    /* display: flex; */
+
+    li {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
 }
